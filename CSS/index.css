@@ -1,70 +1,85 @@
-  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Noto+Sans+JP:wght@100&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap');
 
-body{
-    background-color: rgb(0, 0, 0);
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-}
-
-.main-video{
-   /* display: block;
-   margin-left: 5%;
-   margin-top: 130px; */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: -26px;
-}
-.a1{
-    color: white;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 7rem;
-    font-weight: lighter;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -40px;
-    margin-bottom: 26px;
-    font-weight: bolder
-}
-.img1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    
-}
-.i1{
-    border-radius: 10px;
-}
-#r1{
-    display: flex;
-    float: left;
-}
-#r2{
-    height:43rem;
-    float:right;
-    margin-top: 265px;
-}
-.text{
-    position: absolute;
-    bottom: -1600px;
-    left: 37%;
-    font-weight: bolder;
-    word-spacing: 8px;
-    font-family:monospace;
-    font-weight: bolder;
-}
-.t1,.t2{
-    font-size: 25px;
-    color: white;
     font-family: monospace;
-    justify-content: center;
-    display: flex;
-    font-family: 'Rubik Lines', system-ui;
+    box-sizing: border-box;
 }
-
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    padding: 40px  100px;
+    font: monospace;
+    background-color: black;
+    color: white;
+}
+.links{
+    display: flex;
+    width: 200px;
+    /* height: 160px; 
+    border: 2px solid white; */
+}
+.lrow{
+    width: 50%;
+}
+.lrow a{
+    display: inline;
+    color: #e1ff00;
+    text-decoration: none;
+    font-family: monospace;
+    margin-top: 7px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#playbutton{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    margin-top: 40px;
+}
+#playbutton i{
+    font-size: 20px;
+}
+#playbutton p{
+    font-size: 12px;
+    font-family: monospace;
+    margin-left: 10px;
+    font-weight: 200;
+}
+#hero{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.359);
+    margin-top: 95px;
+    position: absolute;
+    left: 0;
+    top:35%;
+    transform: translate(0,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero video{
+    height: 90%;
+    vertical-align: middle;
+}
+#hero h1{
+    font-size: 160px;
+    position: absolute;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    margin-left: -95px;
+    z-index: 9999;
+}
+#hero h1 .space{
+    display: inline-block;
+    width: 490px;
+    vertical-align: middle;
+}
